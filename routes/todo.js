@@ -3,6 +3,7 @@ var router = express.Router();
 
 router.get('/', function(req, res, next) {
   res.render('todo', {title: req.query.title});
+  console.log(req.query)
 });
 
 module.exports = router;
