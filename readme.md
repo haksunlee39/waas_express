@@ -9,6 +9,7 @@ req.body 등등...
 ### 12월 24일
 ![GET](./docsimg/GET.jpg)
 * GET 요청 3번을 하기 위해서는 localhost:3000/form?phrase=killa&repeat=3 을 해야한다
+
 ![POST](./docsimg/POST.jpg)
 * POST 요청 7번을 하기 위해서는 localhost:3000/form 에 JSON 파일로 
 ```
@@ -19,6 +20,7 @@ req.body 등등...
 ```
 을 하면 된다
 ![PUT](./docsimg/PUT.jpg)
+
 * PUT 요청 5번을 하기 위해서는 위와 비슷하다 localhost:3000/form 에 JSON 파일로
 ```
 {
@@ -28,4 +30,20 @@ req.body 등등...
 ```
 을 하면 된다
 ![DELETE](./docsimg/DELETE.jpg)
+
 * DELETE 요청 1번을 하기위해서는 DELETE 명령으로 접속만 해주면 된다.
+
+### 12월 25일
+*가능한 경우는 4가지!
+
+* 먼저 text/html 형식으로 보내는 것
+![12_25_1](/docsimg/12_25_1.jpg)
+
+* 다음은 text/plain 형식으로 보내고 'image' 라는 KEY 에 y 라는 값을 넣고 보내는 것
+![12_25_2](/docsimg/12_25_2.jpg)
+
+* 먼저 text/plain 형식으로 보내는 것
+![12_25_3](/docsimg/12_25_3.jpg)
+
+* 위와 겹치지 않는 방법으로 보내는 것
+![12_25_4](/docsimg/12_25_4.jpg)
