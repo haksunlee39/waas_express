@@ -11,6 +11,11 @@ router.post('/', function(req, res, next) {
       maxAge: 30000   // 30000밀리초 → 30초
     })
   }
+  if(req.body.id === 'haksun' && req.body.pw === 'chocolate') {
+    res.cookie('name', 'haksun', {
+      maxAge: 30000   // 30000밀리초 → 30초
+    })
+  }
   return res.status(302).redirect("/login");
 });
 
@@ -25,7 +30,13 @@ router.get('/isLogin', function(req, res, next) {
   }
   else {
     // todo(12-27): login한 ID로 cookie값을 설정, ID가 waas가 아닌경우 403 Forbidden 공지
-    return res.status(200).send("waas team");
+    if(!(req.cookies.name === 'waas')) {
+      return res.status(403).send("forbidden");
+    }
+    else
+    {
+      return res.status(200).send("waas team");
+    }
   }
 })
 
