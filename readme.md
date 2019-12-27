@@ -78,12 +78,15 @@ if(req.body.id === 'waas' && req.body.pw === 'team') {
 ```
 여기에서 30초 라는 수명을 줌
 * chrome 개발자 도구 > applications > cookie에서 cookie가 생긴 것을 확인 (**screenshot 기록해둘 것**)
+
 ![12_26_1](./docsimg/12_26_1.jpg)
 
 * login process과 redirect의 response code
+
 코드에 따라 200 또는 302를 발견할 수 있음
 
 * `/login/isLoggin`에서 400, 200 response code 확인
+
 만약 waas 로 로그인 했다면 200 아니라면 401이 뜸
 
 ### 12월 27일: login 구현체 수정
